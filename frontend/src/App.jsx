@@ -41,7 +41,7 @@ function App() {
       setLoading(true);
       setError("");
 
-      const response = await fetch("http://127.0.0.1:5000/optimize");
+      const response = await fetch("/api/optimize");
 
       if (!response.ok) {
         throw new Error("Backend tidak merespons");
